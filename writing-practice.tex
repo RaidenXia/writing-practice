@@ -1,0 +1,55 @@
+\documentclass[journal,twoside,web]{ieeecolor2}
+\usepackage{generic}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\markboth{\journalname, VOL. NULL, NO. NULL,  2024}
+{Author \MakeLowercase{\textit{et al.}}: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS (December 2023)}
+
+\begin{document}
+\title{Fast Adaptive Multivariate Variational Mode Decomposition With Application to Seizure Detection}
+\author{Shizhou Xia, 242080106
+\thanks{This work was supported by nothing.}
+\thanks{Xia is with the HANGZHOU DIANZI UNIVERSITY, China 
+(e-mail: 1282707016@qq.com). }
+}
+
+\maketitle
+
+\begin{abstract}
+Traditional seizure detection relies on video and electroencephalography (EEG) monitoring, which is expensive for patients not in hospitals. Lately, portable seizure detection devices have attracted more interest. In this paper, multimodal signals collected by portable devices are studied, and a seizure detection algorithm with optimally selected EEG channels is proposed based on fast adaptive multivariate variational mode decomposition (FAMVMD). Firstly, a smart multichannel spectral structure scanner is constructed to adaptively detect the latent center frequencies (CFs) in the multichannel EEG signals. Secondly, we decompose the EEG signals from each channel into intrinsic mode functions (IMFs) with different frequency bands by using the CFs. The Lasso method is employed to filter the IMFs that significantly contribute to the seizure period data, fully considering hidden relevant information and eliminating redundant data to improve the prediction accuracy; Thirdly, the IMFs with the high entropy, indicating the greatest unpredictability, are secondary decomposed to obtain latent sub-IMFs. Finally, a fusion strategy, which extracts features from all IMFs, is suggested for classification. Overall, the proposed method outperforms the other methods in these trials.    
+\end{abstract}
+
+\begin{IEEEkeywords}
+Seizure detection, multimodal, multivariate variational mode decomposition, adaptively detect
+\end{IEEEkeywords}
+
+\section{Introduction}
+\label{sec:introduction}
+\IEEEPARstart{E}{pilepsy} is a prevalent neurological condition globally, resulting from sudden, excessive, and synchronized neuronal firing in the brain\cite{wu_Novel_2024}. This disorder is marked by sporadic and brief episodes of seizures\cite{kim2020epileptic}. As electronic devices advance, techniques for signal mode decomposition in multivariate nonstationary signals have broadened their applications significantly\cite{stankovic2020decomposition}, encompassing areas such as the detection of abnormal EEG signals\cite{ala2022alpha}, noise reduction\cite{stankovic2018time} and et al. Multivariate signal processing techniques that employ conventional linear transformations to extract individual univariate modes are relatively simple to implement. However, the multivariate modes derived from multichannel decomposition approaches contain richer combined information from the entire set of multichannel data compared to the univariate modes obtained through single-channel decomposition methods for each channel. To capitalize on this collective information, numerous multichannel decomposition techniques have been developed. To harness the benefits of collective data insights, a variety of multichannel decomposition techniques have been put forward.
+
+
+
+\section{Units}
+
+
+\section{Some Common Mistakes}
+
+
+\section{Guidelines for Graphics Preparation and Submission}
+\label{sec:guidelines}
+
+
+
+\section{Conclusion}
+ 
+
+%参考文献
+\bibliography{writing-practice.bib} %.bib文件名字
+\bibliographystyle{IEEEtran.bst} %.bst模板
+    
+\end{document}
